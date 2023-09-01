@@ -57,5 +57,5 @@ body {
 
 ## Author
 
-- Github - [Kiet Ly - Fullstack developer](https://github.com/kietly2k)
-- Frontend Mentor - [kietly2k](https://www.frontendmentor.io/profile/kietly2k)
+- Github: [Kiet Ly - Fullstack developer](https://github.com/kietly2k)
+- Frontend Mentor: [kietly2k](https://www.frontendmentor.io/profile/kietly2k)
