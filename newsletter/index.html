@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body> 
+    <section class="newsletter"> 
+      <div class="newsletter__image"><img src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset=""></div>
+      <div class="newsletter__form">
+        <h1 class="newsletter__title">Stay updated!</h1>
+        <p class="newsletter__desc">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="product"> 
+          <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Product discovery and building what matters</span></li>
+          <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Measuring to ensure updates are a success</span></li>
+          <li class="product__item"><img src="./assets/images/icon-list.svg" alt="Icon Success"><span>And much more!</span></li>
+        </ul>
+        <label class="label" for="#txtEmail">Email address</label>
+        <input class="input" id="txtEmail" type="text" placeholder="email@company.com">
+        <button class="btn">Subscribe to monthly newsletter</button>
+      </div>
+    </section>
+    <section class="news-dialog"><img class="news-dialog__image" src="./assets/images/icon-success.svg" alt="Icon Success" srcset="">
+      <h1 class="news-dialog__title">Thanks for subscribing!</h1>
+      <p class="news-dialog__desc">A confirmation email has been sent to<span class="news-dialog__email"> ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="btn">Dismiss message</button>
+    </section>
+  </body>
 </html>
