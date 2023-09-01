@@ -6,28 +6,32 @@ html(lang="en")
         title Frontend Mentor | Newsletter sign-up form with success message
         link(rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon")
         link(rel="stylesheet" href="./css/reset.css")
+        link(rel="stylesheet", href="./css/animation.css")
         link(rel="stylesheet" href="./css/style.css")
     body 
-        section.newsletter 
-            .newsletter__image
-                img(src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset="")
-            .newsletter__form
-                h1.newsletter__title Stay updated!
-                p.newsletter__desc Join 60,000+ product managers receiving monthly updates on:
-                ul.product 
-                    li.product__item 
-                        img(src="./assets/images/icon-list.svg" alt="Icon Success")
-                        span Product discovery and building what matters
-                    li.product__item 
-                        img(src="./assets/images/icon-list.svg" alt="Icon Success")
-                        span Measuring to ensure updates are a success
-                    li.product__item
-                        img(src="./assets/images/icon-list.svg" alt="Icon Success") 
-                        span And much more!
+        section.newsletter
+            .newsletter__container
+                .newsletter__image
+                    img(alt="image of hero section" srcset="")
+                form#newsletter-form.newsletter__form(action="#")
+                    h1.newsletter__title Stay updated!
+                    p.newsletter__desc Join 60,000+ product managers receiving monthly updates on:
+                    ul.product 
+                        li.product__item 
+                            img(src="./assets/images/icon-list.svg" alt="Icon Success")
+                            span Product discovery and building what matters
+                        li.product__item 
+                            img(src="./assets/images/icon-list.svg" alt="Icon Success")
+                            span Measuring to ensure updates are a success
+                        li.product__item
+                            img(src="./assets/images/icon-list.svg" alt="Icon Success") 
+                            span And much more!
 
-                label.label(for="#txtEmail") Email address
-                input#txtEmail.input(type="text" placeholder="email@company.com", autocomplete=false)
-                button.btn Subscribe to monthly newsletter
+                    .newsletter__email
+                        label.label(for="email") Email address
+                        span#spEmailErrorMessage
+                        input#txtEmail.newsletter__input.input(type="text" placeholder="email@company.com", autocomplete=false, name="email")
+                    input.btn(type="submit", value="Subscribe to monthly newsletter")
 
         section.news-dialog
             img.news-dialog__image(src="./assets/images/icon-success.svg" alt="Icon Success" srcset="") 
@@ -35,8 +39,9 @@ html(lang="en")
             p.news-dialog__desc A confirmation email has been sent to
                 span.news-dialog__email  ash@loremcompany.com
                 |. Please open it and click the button inside to confirm your subscription.
-            button.btn Dismiss message
+            button#btnDismiss.btn.news-dialog__dismiss Dismiss message
 
+        script(src="../js/index.js") 
 
 
 

@@ -6,28 +6,34 @@
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body> 
-    <section class="newsletter"> 
-      <div class="newsletter__image"><img src="./assets/images/illustration-sign-up-mobile.svg" alt="" srcset=""></div>
-      <div class="newsletter__form">
-        <h1 class="newsletter__title">Stay updated!</h1>
-        <p class="newsletter__desc">Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="product"> 
-          <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Product discovery and building what matters</span></li>
-          <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Measuring to ensure updates are a success</span></li>
-          <li class="product__item"><img src="./assets/images/icon-list.svg" alt="Icon Success"><span>And much more!</span></li>
-        </ul>
-        <label class="label" for="#txtEmail">Email address</label>
-        <input class="input" id="txtEmail" type="text" placeholder="email@company.com">
-        <button class="btn">Subscribe to monthly newsletter</button>
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__image"><img alt="image of hero section" srcset=""></div>
+        <form class="newsletter__form" id="newsletter-form" action="#">
+          <h1 class="newsletter__title">Stay updated!</h1>
+          <p class="newsletter__desc">Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="product"> 
+            <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Product discovery and building what matters</span></li>
+            <li class="product__item"> <img src="./assets/images/icon-list.svg" alt="Icon Success"><span>Measuring to ensure updates are a success</span></li>
+            <li class="product__item"><img src="./assets/images/icon-list.svg" alt="Icon Success"><span>And much more!</span></li>
+          </ul>
+          <div class="newsletter__email">
+            <label class="label" for="email">Email address</label><span id="spEmailErrorMessage"></span>
+            <input class="newsletter__input input" id="txtEmail" type="text" placeholder="email@company.com" name="email">
+          </div>
+          <input class="btn" type="submit" value="Subscribe to monthly newsletter">
+        </form>
       </div>
     </section>
     <section class="news-dialog"><img class="news-dialog__image" src="./assets/images/icon-success.svg" alt="Icon Success" srcset="">
       <h1 class="news-dialog__title">Thanks for subscribing!</h1>
       <p class="news-dialog__desc">A confirmation email has been sent to<span class="news-dialog__email"> ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
-      <button class="btn">Dismiss message</button>
+      <button class="btn news-dialog__dismiss" id="btnDismiss">Dismiss message</button>
     </section>
+    <script src="../js/index.js"> </script>
   </body>
 </html>
