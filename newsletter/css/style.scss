@@ -24,7 +24,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: $dark-slate-grey;
-  overflow: hidden;
 }
 
 #spEmailErrorMessage,
@@ -79,6 +78,7 @@ body {
   border-radius: $border-radius;
   width: 100%;
   margin: 1rem 0;
+  cursor: pointer;
 
   &:hover,
   &:active {
