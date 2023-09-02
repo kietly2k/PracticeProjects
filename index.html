@@ -9,7 +9,7 @@
       sizes="32x32"
       href="./favicon-32x32.png"
     />
-    <title>Frontend Mentor</title>
+    <title>My practie projects</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,11 +41,12 @@
       }
 
       .title {
-        font-size: 3rem;
+        font-size: 6rem;
         font-weight: 700;
         display: block;
         text-align: center;
         padding: 10rem 0 2rem 0;
+        color: var(--clr-Dark-blue);
       }
 
       .projects {
@@ -57,6 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 2.5rem;
       }
 
       .project__item {
@@ -71,6 +73,7 @@
         width: 100%;
         border-radius: 3rem;
         padding: 1.2rem;
+        min-height: 80%;
       }
 
       .project__info {
@@ -94,14 +97,23 @@
   </head>
   <body>
     <section class="projects">
-      <h1 class="title">My front end mentor projects</h1>
+      <h1 class="title">My practie projects</h1>
       <div class="project-list">
         <div class="project__item">
           <img class="project__image" src="./qr-code/images/screenshot.jpeg" />
           <div class="project__info">
-            <h3 class="project__title">First challenge</h3>
+            <h3 class="project__title">QR code front end mentor</h3>
             <p class="project__desc">
               <a href="./qr-code/index.html">View challenge</a>
+            </p>
+          </div>
+        </div>
+        <div class="project__item">
+          <img class="project__image" src="./newsletter/assets/images/screenshot-desktop.jpeg" />
+          <div class="project__info">
+            <h3 class="project__title">Newsletter form</h3>
+            <p class="project__desc">
+              <a href="./newsletter/index.html">View challenge</a>
             </p>
           </div>
         </div>
