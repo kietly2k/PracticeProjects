@@ -1,0 +1,258 @@
+$dark-slate-grey: hsl(234, 29%, 20%);
+$harcoal-grey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+$border-radius: 0.5rem;
+$clr-error: hsl(4, 100%, 67%);
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $dark-slate-grey;
+}
+
+#spEmailErrorMessage,
+.label {
+  color: $harcoal-grey;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.8rem 0 0.5rem 0;
+  display: block;
+}
+
+#spEmailErrorMessage {
+  color: $clr-error;
+  display: none;
+  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.input {
+  color: $grey;
+  font-size: 1.2rem;
+  font-family: inherit;
+  width: 100%;
+  height: 4rem;
+  outline: none;
+  border-radius: $border-radius;
+  border: 1px solid currentColor;
+  padding-left: 1.5rem;
+  display: block;
+
+  &:focus {
+    color: $dark-slate-grey;
+  }
+
+  // Keep the style when user done typing
+  &:not(:placeholder-shown) {
+    color: $dark-slate-grey;
+  }
+}
+
+.btn {
+  color: $white;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-align: center;
+  background-color: $dark-slate-grey;
+  height: 4rem;
+  border: 0;
+  border-radius: $border-radius;
+  width: 100%;
+  margin: 1rem 0;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: linear-gradient(
+      90deg,
+      rgba(248, 80, 120, 1) 0%,
+      rgba(248, 103, 57, 1) 100%
+    );
+  }
+}
+
+.newsletter {
+  font-size: 1.6rem;
+  background-color: $white;
+  margin: 0 auto;
+
+  &__container {
+    max-width: 50rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+
+  &__image {
+    img {
+      content: url(../assets/images/illustration-sign-up-mobile.svg);
+      width: 100%;
+    }
+  }
+
+  &__form {
+    color: $grey;
+    padding: 2rem 1rem;
+    max-width: 38rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    color: $harcoal-grey;
+    font-weight: 700;
+    padding: 1.5rem 0;
+  }
+
+  &__desc {
+    color: $harcoal-grey;
+    padding: 1.5rem 0 0.5rem 0;
+  }
+
+  &__email {
+    position: relative;
+  }
+
+  &__input {
+    &.has-error {
+      color: $clr-error;
+      background-color: hsl(4, 100%, 67%, 20%);
+      border: 1px solid currentColor;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 93rem;
+    margin-top: 15rem;
+    border-radius: 2rem;
+
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      max-width: none;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 5.5rem;
+    }
+
+    &__image {
+      padding: 1.5rem;
+
+      img {
+        border-radius: 2rem;
+        height: 100%;
+        content: url(../assets/images/illustration-sign-up-desktop.svg);
+      }
+    }
+
+    &__form {
+      margin: auto;
+    }
+  }
+}
+
+.product {
+  color: $harcoal-grey;
+  font-size: 1.6rem;
+
+  padding: 0.5rem 0 1.5rem 0;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.news-dialog {
+  padding: 0 2rem;
+  max-width: 50rem;
+  background-color: $white;
+  display: none;
+
+  &__image {
+    display: block;
+    padding: 10rem 0 2rem 0;
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: $dark-slate-grey;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    padding: 3rem 0 22rem 0;
+  }
+
+  &__email {
+    font-weight: 700;
+  }
+
+  &__dismiss {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 376px) {
+    max-height: 52rem;
+    margin: 23.5rem auto;
+    border-radius: 2rem;
+
+    > * {
+      max-width: 30rem;
+      margin-left: 8rem;
+    }
+
+    &__desc {
+      font-size: 1.6rem;
+      padding: 3rem 0 4rem 0;
+    }
+  }
+}
+
+.fade-out-bck {
+	-webkit-animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
