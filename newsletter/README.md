@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [NewsletterFormSolution](https://github.com/kietly2k/PracticeProjects/tree/newsletter/newsletter)
-- Live Site URL: [NewsletterFormLiveSite](https://kietly2k.github.io/PracticeProjects/newsletter/index.html)
+- Solution URL: [NewsletterFormSolution](https://github.com/kietly2k/practiceprojects/tree/newsletter/newsletter)
+- Live Site URL: [NewsletterFormLiveSite](https://kietly2k.github.io/practiceprojects/newsletter/index.html)
 
 ## My process
 
