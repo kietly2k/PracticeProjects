@@ -1,4 +1,4 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Frontend Mentor - Newsletter sign-up form with success message
 
 ## Table of contents
 
