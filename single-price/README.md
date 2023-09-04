@@ -34,8 +34,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Single Price Component Solution](https://github.com/kietly2k/practiceprojects/tree/singleprice/newsletter)
-- Live Site URL: [Single Price Component Site](https://kietly2k.github.io/practiceprojects/singleprice/index.html)
+- Solution URL: [Single Price Component Solution](https://github.com/kietly2k/practiceprojects/tree/production/single-price)
+- Live Site URL: [Single Price Component Live Site](https://kietly2k.github.io/practiceprojects/single-price/index.html)
 
 ## My process
 
