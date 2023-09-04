@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn-send-mail {
+    background: hsla(355, 74%, 84%, 1);
+    background: linear-gradient(
+      90deg,
+      hsla(355, 74%, 84%, 1) 15%,
+      hsla(1, 74%, 77%, 1) 100%
+    );
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(355, 74%, 84%, 1) 15%,
+      hsla(1, 74%, 77%, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(355, 74%, 84%, 1) 15%,
+      hsla(1, 74%, 77%, 1) 100%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4B6BB", endColorstr="#F09C9A", GradientType=1 );
+  }
+}
