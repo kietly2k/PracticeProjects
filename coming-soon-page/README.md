@@ -1,4 +1,4 @@
-# Frontend Mentor - Single Price Grid Component
+# Frontend Mentor - Base Apparel coming soon page
 
 ## Table of contents
 
@@ -10,14 +10,13 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
 
 ### The challenge
 
-Users should be able to:
+Uers should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
@@ -36,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Single Price Component Solution](https://github.com/kietly2k/practiceprojects/tree/production/single-price)
-- Live Site URL: [Single Price Component Live Site](https://kietly2k.github.io/practiceprojects/single-price/index.html)
+- Solution URL: [Base Apparel coming soon page Solution](https://github.com/kietly2k/practiceprojects/tree/production/coming-soon-page)
+- Live Site URL: [Base Apparel coming soon page Live Site](https://kietly2k.github.io/practiceprojects/coming-soon-page/index.html)
 
 ## My process
 
@@ -48,16 +47,12 @@ Users should be able to:
 
 ### What I learned
 
-- How to use Tailwind CSS to create a simple single price component.
+- How to use Tailwind CSS to create a simple coming soon page.
 - Handle responsive for all screen size using Tailwind CSS.
 
 ### Continued development
 
 - Practice more about Tailwind CSS and learn to work with orther front end framework (Vue, ReactJS,...).
-
-### Useful resources
-
-- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
 ## Author
 

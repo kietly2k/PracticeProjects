@@ -5,21 +5,28 @@
 @layer utilities {
   .btn-send-mail {
     background: hsla(355, 74%, 84%, 1);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+
+  .btn-send-mail:active,
+  .btn-send-mail:hover {
+    background: hsla(355, 74%, 84%, 1);
     background: linear-gradient(
-      90deg,
-      hsla(355, 74%, 84%, 1) 15%,
-      hsla(1, 74%, 77%, 1) 100%
+      135deg,
+      from hsl(0, 0%, 100%),
+      to hsl(0, 100%, 98%)
     );
-    background: -moz-linear-gradient(
-      90deg,
-      hsla(355, 74%, 84%, 1) 15%,
-      hsla(1, 74%, 77%, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      90deg,
-      hsla(355, 74%, 84%, 1) 15%,
-      hsla(1, 74%, 77%, 1) 100%
-    );
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F4B6BB", endColorstr="#F09C9A", GradientType=1 );
+  }
+
+  .error-input {
+    @apply border-clr-soft-red;
+  }
+
+  .error-message {
+    @apply visible;
+  }
+
+  .error-icon {
+    @apply before:content-['!'] before:text-white before:bg-clr-soft-red before:w-6 before:h-6 before:text-center before:rounded-full before:align-middle before:pt-0.5 before:absolute before:-left-10;
   }
 }
