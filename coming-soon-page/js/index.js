@@ -15,6 +15,8 @@ function initialize() {
       addErrorClass("Please provide a valid email");
       return;
     }
+
+    window.location = window.location.href;
   });
 
   txtEmail.addEventListener("input", function (e) {

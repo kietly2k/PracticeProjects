@@ -52,7 +52,13 @@ Uers should be able to:
 
 ### Continued development
 
-- Practice more about Tailwind CSS and learn to work with orther front end framework (Vue, ReactJS,...).
+- Refactor and add these features in the future:
+  - Add a modal popup after sending an email.
+  - Refactor the way layouts are handled.
+  - Make the layout scale more smoothly and responsively.
+  - Try handling validation using only CSS.
+  - With screen sizes below 690px, the button is not displayed. The user has to scroll down (This is a bug because it’s easy for the user to think that the button does not exist). 
+
 
 ## Author
 
