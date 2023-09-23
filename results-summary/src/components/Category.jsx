@@ -18,8 +18,8 @@ function Category(props) {
         </span>
       </div>
       <div>
-        <span className="font-extrabold px-1">{props.score}</span>/
-        <span className="pl-1 pr-4 font-semibold text-[#979195]">100</span>
+        <span className="font-extrabold px-1">{props.score}</span>
+        <span className="pl-1 pr-4 font-semibold text-[#979195]">/ 100</span>
       </div>
     </div>
   );

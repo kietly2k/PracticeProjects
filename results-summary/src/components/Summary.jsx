@@ -25,8 +25,8 @@ function Summary() {
 
   const formatData = (data) => {
     return data.map((x) => {
-      const color = categoryColors.find(c => c.category === x.category);
-      x.textColorClass =  color.textColorClass;
+      const color = categoryColors.find((c) => c.category === x.category);
+      x.textColorClass = color.textColorClass;
       x.backgroundColorClass = color.backgroundColorClass;
       return x;
     });

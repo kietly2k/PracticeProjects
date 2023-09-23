@@ -1,4 +1,4 @@
-# Frontend Mentor - Base Apparel coming soon page
+# Frontend Mentor - Results summary Component
 
 ## Table of contents
 
@@ -25,32 +25,37 @@ Users should be able to:
 
 - Mobile:\
 \
-![](./images/screenshot-mobile.jpeg)
+![](./public/images/screenshot-mobile.jpeg)
 
 - Desktop:\
 \
-![](./images/screenshot-desktop.jpeg)
+![](./public/images/screenshot-desktop.png)
 
 ### Links
 
-- Solution URL: [Base Apparel coming soon page Solution](https://github.com/kietly2k/practiceprojects/tree/production/coming-soon-page)
-- Live Site URL: [Base Apparel coming soon page Live Site](https://kietly2k.github.io/practiceprojects/coming-soon-page/index.html)
+- Solution URL: [Results summary Component Solution](https://github.com/kietly2k/practiceprojects/tree/production/results-summary-component)
+- Live Site URL: [Results summary Component Live Site](https://kietly2k.github.io/practiceprojects/results-summary-component/index.html)
 
 ## My process
 
 ### Built with
 
 - Mobile-first workflow
-- Tailwind CSS
+- TailwindCSS
+- ReactJS
+- ViteJs
 
 ### What I learned
 
-- How to use Tailwind CSS to create a simple coming soon page.
+- How to use Tailwind CSS to create a simple Results summary Component.
 - Handle responsive for all screen size using Tailwind CSS.
+- Write components using ReactJS.
+- Create and run project using Vite.
+- Use prettier-plugin-tailwindcss to format code.
 
 ### Continued development
 
-- Practice more about Tailwind CSS and learn to work with orther front end framework (Vue, ReactJS,...).
+- Font weight of the paragraph quite large. Will fix it in the feature.
 
 ## Author
 

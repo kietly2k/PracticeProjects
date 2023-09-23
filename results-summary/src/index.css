@@ -5,6 +5,13 @@
 @tailwind utilities;
 
 @layer base {
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 300;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  }
+
   @font-face {
     font-family: Hanken Grotesk;
     font-weigh: 500;
