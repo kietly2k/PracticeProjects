@@ -7,8 +7,20 @@
 @layer base {
   @font-face {
     font-family: Hanken Grotesk;
-    font-weight: normal;
-    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    font-weigh: 500;
+    src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 700;
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 800;
+    src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
   }
 
   .card-shadow {
