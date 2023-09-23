@@ -33,6 +33,7 @@ function initialize() {
     }
 
     // If success then show popup success
+    // Delete this and replace with new function
     showPopup();
   });
 

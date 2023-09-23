@@ -1,0 +1,48 @@
+/* TODO fix import font */
+/* @import url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 300;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+  }
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 500;
+    src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 700;
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: Hanken Grotesk;
+    font-weigh: 800;
+    src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+  }
+
+  .card-shadow {
+    box-shadow: 7px 14px 38px -7px rgba(113,134,199,0.75);
+    -webkit-box-shadow: 7px 14px 38px -7px rgba(113,134,199,0.75);
+    -moz-box-shadow: 7px 14px 38px -7px rgba(113,134,199,0.75);
+  }
+}
+
+@layer components {
+  .card-bg-color {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
+
+  .score-bg-color {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  }
+}
