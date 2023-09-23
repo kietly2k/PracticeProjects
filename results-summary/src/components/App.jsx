@@ -4,9 +4,11 @@ import Summary from "./Summary";
 
 function App() {
   return (
-    <div>
-      <Card />
-      <Summary />
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="flex flex-wrap bg-white font-Hanken-grotesk max-w-3xl md:card-shadow md:shadow-clr-royal-blue rounded-3xl">
+        <Card />
+        <Summary />
+      </div>
     </div>
   );
 }

@@ -1,47 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Category from "./Category";
-const getData = () => {
-  // TODO: Uncomment this code after done UI
-  //   fetch("../data.json", {
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //   }).then(function (response) {
-  //     return response.json();
-  //   });
-
-  return [
-    {
-      category: "Reaction",
-      score: 80,
-      icon: "../assets/images/icon-reaction.svg",
-    },
-    {
-      category: "Memory",
-      score: 92,
-      icon: "../assets/images/icon-memory.svg",
-    },
-    {
-      category: "Verbal",
-      score: 61,
-      icon: "../assets/images/icon-verbal.svg",
-    },
-    {
-      category: "Visual",
-      score: 72,
-      icon: "../assets/images/icon-visual.svg",
-    },
-  ];
-};
+import { v4 as uuid } from "uuid";
+import Button from "./Button";
+import categoryColors from "../constants/constants";
 
 function Summary() {
-  const categories = getData();
+  const [categories, setCategories] = useState([]);
+
+  const getData = () => {
+    fetch("src/data.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (categoriesJson) {
+        const categories = formatData(categoriesJson);
+        setCategories(categories);
+      });
+  };
+
+  const formatData = (data) => {
+    return data.map((x) => {
+      const color = categoryColors.find(c => c.category === x.category);
+      x.textColorClass =  color.textColorClass;
+      x.backgroundColorClass = color.backgroundColorClass;
+      return x;
+    });
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
-    <div>
+    <div className="w-full px-7 md:w-96">
+      <h2 className="font-bold text-2xl py-7">Summary</h2>
       {categories.map((c) => (
-        <Category category={c.category} score={c.score} icon={c.icon} />
+        <Category
+          key={uuid().slice(0, 8)}
+          category={c.category}
+          score={c.score}
+          icon={c.icon.replace("./", "src/")}
+          backgroundColorClass={c.backgroundColorClass}
+          textColorClass={c.textColorClass}
+        />
       ))}
+      <Button />
     </div>
   );
 }
