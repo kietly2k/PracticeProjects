@@ -25,16 +25,16 @@ Users should be able to:
 
 - Mobile:\
 \
-![](./public/images/screenshot-mobile.jpeg)
+![](./images/screenshot-mobile.jpeg)
 
 - Desktop:\
 \
-![](./public/images/screenshot-desktop.png)
+![](./images/screenshot-desktop.png)
 
 ### Links
 
 - Solution URL: [Results summary Component Solution](https://github.com/kietly2k/practiceprojects/tree/production/results-summary-component)
-- Live Site URL: [Results summary Component Live Site](https://kietly2k.github.io/practiceprojects/results-summary-component/index.html)
+- Live Site URL: [Results summary Component Live Site](https://kietly2k.github.io/practiceprojects/results-summary)
 
 ## My process
 

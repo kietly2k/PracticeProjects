@@ -8,7 +8,7 @@ function Summary() {
   const [categories, setCategories] = useState([]);
 
   const getData = () => {
-    fetch("src/data.json", {
+    fetch("results-summary/src/data.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
