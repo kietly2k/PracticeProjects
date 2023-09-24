@@ -17,8 +17,8 @@
 
 ### Links
 
-- Solution URL: [QRCodeSolution](https://github.com/kietly2k/PracticeProjects/blob/qr-code/qr-code/index.html)
-- Live Site URL: [QRCodeLiveSite](https://kietly2k.github.io/PracticeProjects/qr-code/index.html)
+- Solution URL: [QRCodeSolution](https://github.com/kietly2k/practiceprojects/blob/qr-code/qr-code/index.html)
+- Live Site URL: [QRCodeLiveSite](https://kietly2k.github.io/practiceprojects/qr-code/index.html)
 
 ## My process
 
