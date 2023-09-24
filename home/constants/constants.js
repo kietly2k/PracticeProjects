@@ -20,7 +20,7 @@ const projects = [
     url: "/coming-soon-page/index.html",
   },
   {
-    image: "/results-summary/images/screenshot-desktop.jpeg",
+    image: "/results-summary/images/screenshot-desktop.png",
     title: "Results Summary Component",
     url: "/results-summary",
   },
