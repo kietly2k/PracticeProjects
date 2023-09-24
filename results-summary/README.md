@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Results summary Component Solution](https://github.com/kietly2k/practiceprojects/tree/production/results-summary-component)
-- Live Site URL: [Results summary Component Live Site](https://kietly2k.github.io/practiceprojects/results-summary-component/index.html)
+- Live Site URL: [Results summary Component Live Site](https://kietly2k.github.io/practiceprojects/results-summary)
 
 ## My process
 
