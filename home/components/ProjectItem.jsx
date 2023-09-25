@@ -2,11 +2,11 @@ import React from "react";
 
 function ProjectItem(props) {
   return (
-    <div class="project__item">
-      <img class="project__image" src={props.image} />
-      <div class="project__info">
-        <h3 class="project__title">{props.title}</h3>
-        <p class="project__desc">
+    <div className="project__item">
+      <img className="project__image" src={props.image} />
+      <div className="project__info">
+        <h3 className="project__title">{props.title}</h3>
+        <p className="project__desc">
           <a href={props.url}>View challenge</a>
         </p>
       </div>
